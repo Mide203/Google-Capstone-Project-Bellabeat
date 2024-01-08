@@ -100,15 +100,20 @@ The data cleaning and manipulation are done, next is the “analyze” phase. Da
 
 The column chart below shows peak user logins on Tuesdays, reflecting heightened engagement, while a significant drop from Friday to Monday suggests reduced app interaction over the weekend and the start of the workweek.
 
-![image](https://github.com/Mide203/Google_Capstone_Project/assets/130792306/d80aae8b-355a-4b69-ac4f-fd330d59d0ff)
+
+![image](https://github.com/Mide203/Google_Capstone_Project/assets/130792306/dc833d1b-66d6-40ef-b2a5-2c1e6ddd7d61)
+
 
 The scatter plot below shows the positive relationship between calories burnt and steps taken, with a correlation coefficient of 0.59. This means that as the number of steps increases, there is a corresponding rise in calories burned, highlighting the direct connection between physical activity and energy expenditure.
 
-![image](https://github.com/Mide203/Google_Capstone_Project/assets/130792306/24c2e43d-3753-46af-8c24-029b98d7b36a)
+![image](https://github.com/Mide203/Google_Capstone_Project/assets/130792306/c236cdcd-7d1c-4a4b-b23f-b5c4bd286e4f)
+
 
 The plot below reveals a positive correlation (correlation coefficient: 0.644962) between calories burned and distance covered. This signifies that users covering greater distances exhibit higher calorie expenditure, emphasizing the direct association between physical activity distance and energy burnt.
 
-![image](https://github.com/Mide203/Google_Capstone_Project/assets/130792306/f964d2b6-36a2-4003-aceb-5205f9aa8ea1)
+
+![image](https://github.com/Mide203/Google_Capstone_Project/assets/130792306/d4c5c503-6ae6-4504-8bc5-bbee1c56db95)
+
 
 The plot below reveals a positive relationship between calories burned and hours logged (correlation coefficient of 0.094951). This signifies a weak positive correlation, implying that there is a slight tendency for users who log more hours to burn more calories. 
 A few outliers are also observed in the plot:
@@ -117,7 +122,8 @@ A few outliers are also observed in the plot:
 	
 2.	Another outlier is noted at the 24-hour mark with a corresponding zero-calorie burnt. This outlier suggests a prolonged activity duration without any associated calorie expenditure.
 
-![image](https://github.com/Mide203/Google_Capstone_Project/assets/130792306/3aa91c2e-5c27-4744-acdd-7dd5a5c6202f)
+![image](https://github.com/Mide203/Google_Capstone_Project/assets/130792306/649a417d-a3ba-43e7-b4e3-96871d3a5805)
+
 
 The pie chart below provides valuable insights into Fitbits user activity:
 
@@ -127,7 +133,8 @@ The pie chart below provides valuable insights into Fitbits user activity:
 
 •	Approximately 16% of users’ time is dedicated to light physical activities, showcasing a moderate engagement in activities involving mild exertion.
 
-![image](https://github.com/Mide203/Google_Capstone_Project/assets/130792306/b3c3af8e-34ce-4548-8b10-b154c887c52a)
+![image](https://github.com/Mide203/Google_Capstone_Project/assets/130792306/e489f288-991b-4e38-90b9-fcd447e0186f)
+
 
 # STEP 6: ACT
 
