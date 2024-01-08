@@ -106,8 +106,8 @@ The column chart below shows peak user logins on Tuesdays, reflecting heightened
 
 The scatter plot below shows the positive relationship between calories burnt and steps taken, with a correlation coefficient of 0.59. This means that as the number of steps increases, there is a corresponding rise in calories burned, highlighting the direct connection between physical activity and energy expenditure.
 
-![image](https://github.com/Mide203/Google_Capstone_Project/assets/130792306/c236cdcd-7d1c-4a4b-b23f-b5c4bd286e4f)
 
+![image](https://github.com/Mide203/Google_Capstone_Project/assets/130792306/141c33ba-371b-48fd-bb1c-2d352765ff44)
 
 The plot below reveals a positive correlation (correlation coefficient: 0.644962) between calories burned and distance covered. This signifies that users covering greater distances exhibit higher calorie expenditure, emphasizing the direct association between physical activity distance and energy burnt.
 
