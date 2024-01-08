@@ -10,7 +10,7 @@ Author: Ayomide Onayemi
 
 # STEP 1: ASK
 
-1.0 INTRODUCTION
+**1.0 INTRODUCTION**
 
 Bellabeat, a high-tech manufacturer of health-focused products for women.  has significantly impacted women's well-being by gathering data on activity, sleep, stress, and reproductive health. Since its inception in 2013, Bellabeat has undergone remarkable growth, solidifying its position as a technology-driven wellness entity dedicated to women's health.
 
@@ -24,13 +24,13 @@ Key Stakeholders:
 
 •	Consumers (Bellabeat Customers)
 
-1.1 BUSINESS TASK
+**1.1 BUSINESS TASK**
 
 The objective is to analyze smart device data to gain insights into customer engagement with the Fitbit app. Leveraging trends identified through this analysis, high-level recommendations will be provided to inform Bellabeat’s marketing strategy.
 
-STEP 2: PREPARE
+# STEP 2: PREPARE
 
-2.1 Data Source Used
+**2.1 Data Source Used**
 
 •	 [FitBit Fitness Tracker Data[(https://www.kaggle.com/datasets/arashnic/fitbit) (CC0: Public Domain, dataset made available through [Mobius](https://www.kaggle.com/arashnic))
 
@@ -38,4 +38,111 @@ STEP 2: PREPARE
 
 •	Content: Personal fitness tracker data from thirty Fitbit users, including minute-level output for physical activity, heart rate, and sleep monitoring. Information covers daily activity, steps, and heart rate.
 
+**2.2 Is the data ROCCC?**
 
+ROCCC stands for Reliable, Original, Comprehensive, Current, and Cited. 
+
+Reliable - LOW – selection bias, this data was collected 7 years ago and probably does not effectively represent the current socio-economical factors.
+
+Original - LOW – data is sourced through Amazon Mechanical Turk, a third-party platform, introducing potential biases and limitations.
+
+Comprehensive - MEDIUM – while the dataset includes relevant parameters, the sample size of 30 respondents limits its comprehensiveness.
+
+Current - LOW – The data is over 7 years old, potentially rendering the insights outdated and less applicable to the current landscape.
+
+Cited - LOW - The data is collected from a third party, making the exact sources and methodology unclear and potentially introducing uncertainty.
+
+# STEP 3: PROCESS
+
+The file below was selected and used for analysis.
+
+**dailyActivity_merged.csv**
+
+Data cleaning and manipulation with Excel.
+
+1.	Download data and familiarize: The screenshot of the table below
+
+![image](https://github.com/Mide203/Google_Capstone_Project/assets/130792306/0c3378e4-7d3f-49a5-aa49-c2312041587f)
+
+2.	Sort Data by "ActivityDate", from oldest to newest
+
+![image](https://github.com/Mide203/Google_Capstone_Project/assets/130792306/5bac15d6-9daf-4f81-a752-5d82a5518ecc)
+
+3.	Put data in a table and name "Bellafit"
+  
+4.	Check for blanks: =IF(SUM(COUNTBLANK(Bellafit))>0, "Blanks Found", "No Blanks")
+   
+5.	Distinct count of Id:  33 – contrary to the initially stated number of 30.
+   
+6.	Changed date format: mm/dd/yyyy to dd/mm/yyyy
+    
+7.	Extract "DayOfTheWeek" from ActivityDate: =TEXT(WEEKDAY([@ActivityDate]),"dddd")
+
+![image](https://github.com/Mide203/Google_Capstone_Project/assets/130792306/0d0b3cfa-a71e-43ba-816e-d2d82b230411)
+
+8.	Calculate the TotalMinutes: =SUM([@VeryActiveMinutes],[@FairlyActiveMinutes],[@LightlyActiveMinutes],[@SedentaryMinutes])
+9.	Calculate the TotalHours: =[@TotalMinutes]/60
+
+![image](https://github.com/Mide203/Google_Capstone_Project/assets/130792306/29f48ef1-570c-41d2-a75e-6269c34fab09)
+
+# STEP 4: ANALYZE
+The data cleaning and manipulation are done, next is the “analyze” phase. Data aggregation using pivot table.
+
+![image](https://github.com/Mide203/Google_Capstone_Project/assets/130792306/4ce7ea69-d6ae-41e2-8bc5-68644a897716)
+
+**4.1 Findings from the analysis**
+
+1. Tuesday is the most active day with the highest recorded number of steps and distance. Additionally, user engagement, indicated by the frequency of logins, reaches its peak on Tuesday.
+  
+2. Fitbit users, on average, recorded 7,638 steps and covered a distance of 5.49 km per week. Moreover, the average caloric expenditure amounted to 2,304 calories, with users spending an average of 20.3 hours engaging in activities throughout the week.
+
+# STEP 5: SHARE
+
+The column chart below shows peak user logins on Tuesdays, reflecting heightened engagement, while a significant drop from Friday to Monday suggests reduced app interaction over the weekend and the start of the workweek.
+
+![image](https://github.com/Mide203/Google_Capstone_Project/assets/130792306/d80aae8b-355a-4b69-ac4f-fd330d59d0ff)
+
+The scatter plot below shows the positive relationship between calories burnt and steps taken, with a correlation coefficient of 0.59. This means that as the number of steps increases, there is a corresponding rise in calories burned, highlighting the direct connection between physical activity and energy expenditure.
+
+![image](https://github.com/Mide203/Google_Capstone_Project/assets/130792306/24c2e43d-3753-46af-8c24-029b98d7b36a)
+
+The plot below reveals a positive correlation (correlation coefficient: 0.644962) between calories burned and distance covered. This signifies that users covering greater distances exhibit higher calorie expenditure, emphasizing the direct association between physical activity distance and energy burnt.
+
+![image](https://github.com/Mide203/Google_Capstone_Project/assets/130792306/f964d2b6-36a2-4003-aceb-5205f9aa8ea1)
+
+The plot below reveals a positive relationship between calories burned and hours logged (correlation coefficient of 0.094951). This signifies a weak positive correlation, implying that there is a slight tendency for users who log more hours to burn more calories. 
+A few outliers are also observed in the plot:
+
+1.	Zero value outliers indicate an occurrence where neither calories burnt nor hours logged are recorded.
+	
+2.	Another outlier is noted at the 24-hour mark with a corresponding zero-calorie burnt. This outlier suggests a prolonged activity duration without any associated calorie expenditure.
+
+![image](https://github.com/Mide203/Google_Capstone_Project/assets/130792306/3aa91c2e-5c27-4744-acdd-7dd5a5c6202f)
+
+The pie chart below provides valuable insights into Fitbits user activity:
+
+•	Fitbit users predominantly log sedentary activities, indicating that a significant portion of their time involves low physical activity levels.
+
+•	Users dedicate only a small portion of their time to monitor fitness activities, or they may not participate in physical activities like running or workouts.
+
+•	Approximately 16% of users’ time is dedicated to light physical activities, showcasing a moderate engagement in activities involving mild exertion.
+
+![image](https://github.com/Mide203/Google_Capstone_Project/assets/130792306/b3c3af8e-34ce-4548-8b10-b154c887c52a)
+
+# STEP 6: ACT
+
+**The trends identified:**
+
+•	Notable day-specific peak indicates a recurring pattern of increased physical activity.
+
+•	A higher percentage of Fitbit users engage in sedentary activities rather than utilizing the app for fitness tracking.
+
+•	Users exhibit higher app engagement on weekdays compared to weekends.
+
+**How can these inform Bellabeat marketing strategy?**
+
+•	Bellabeat can capitalize on the observed weekday peaks by strategically deploying promotions, challenges, or content releases, particularly on Tuesdays.
+
+•	Implement notification prompts to encourage users to engage in physical activity and track their activities using the app. Timely reminders can boost user adherence to fitness goals.
+
+•	Develop educational content highlighting the importance of active living and the health benefits of regular exercise.
