@@ -8,7 +8,7 @@ Company: [Bellabeat](https://bellabeat.com/)
 
 Author: Ayomide Onayemi
 
-# STEP 1: ASK
+## STEP 1: ASK
 
 **1.0 INTRODUCTION**
 
@@ -28,7 +28,7 @@ Key Stakeholders:
 
 The objective is to analyze smart device data to gain insights into customer engagement with the Fitbit app. Leveraging trends identified through this analysis, high-level recommendations will be provided to inform Bellabeat’s marketing strategy.
 
-# STEP 2: PREPARE
+## STEP 2: PREPARE
 
 **2.1 Data Source Used**
 
@@ -52,7 +52,7 @@ Current - LOW – The data is over 7 years old, potentially rendering the insigh
 
 Cited - LOW - The data is collected from a third party, making the exact sources and methodology unclear and potentially introducing uncertainty.
 
-# STEP 3: PROCESS
+## STEP 3: PROCESS
 
 The file below was selected and used for analysis.
 
@@ -85,7 +85,7 @@ Data cleaning and manipulation with Excel.
 
 ![image](https://github.com/Mide203/Google_Capstone_Project/assets/130792306/29f48ef1-570c-41d2-a75e-6269c34fab09)
 
-# STEP 4: ANALYZE
+## STEP 4: ANALYZE
 The data cleaning and manipulation are done, next is the “analyze” phase. Data aggregation using pivot table.
 
 ![image](https://github.com/Mide203/Google_Capstone_Project/assets/130792306/4ce7ea69-d6ae-41e2-8bc5-68644a897716)
@@ -96,7 +96,7 @@ The data cleaning and manipulation are done, next is the “analyze” phase. Da
   
 2. Fitbit users, on average, recorded 7,638 steps and covered a distance of 5.49 km per week. Moreover, the average caloric expenditure amounted to 2,304 calories, with users spending an average of 20.3 hours engaging in activities throughout the week.
 
-# STEP 5: SHARE
+## STEP 5: SHARE
 
 The column chart below shows peak user logins on Tuesdays, reflecting heightened engagement, while a significant drop from Friday to Monday suggests reduced app interaction over the weekend and the start of the workweek.
 
@@ -136,7 +136,7 @@ The pie chart below provides valuable insights into Fitbits user activity:
 ![image](https://github.com/Mide203/Google_Capstone_Project/assets/130792306/e489f288-991b-4e38-90b9-fcd447e0186f)
 
 
-# STEP 6: ACT
+## STEP 6: ACT
 
 **The trends identified:**
 
