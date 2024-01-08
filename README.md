@@ -24,8 +24,6 @@ Key Stakeholders:
 
 •	Bellabeat Marketing Analytics Team
 
-•	Consumers (Bellabeat Customers)
-
 **1.1 BUSINESS TASK**
 
 The objective is to analyze smart device data to gain insights into customer engagement with the Fitbit app. Leveraging trends identified through this analysis, high-level recommendations will be provided to inform Bellabeat’s marketing strategy.
