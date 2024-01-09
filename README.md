@@ -6,6 +6,16 @@ Bellabeat, founded by Urška Sršen and Sando Mur in 2013, is a tech-driven well
 
 ![image](https://github.com/Mide203/Google-Capstone-Project-Bellabeat/assets/130792306/157eede5-ffcd-4789-acc1-eb7808e313ee)
 
+**Key Stakeholders**
+
+•	Urška Sršen (Co-founder and Chief Creative Officer)
+
+•	Sando Mur (Co-founder and Mathematician)
+
+•	Bellabeat Marketing Analytics Team
+
+•	Consumers (Bellabeat Customers)
+
 ### Business Task
 
 The objective is to analyze smart device data to gain insights into customer engagement with the Fitbit app. Leveraging trends identified through this analysis, high-level recommendations will be provided to inform Bellabeat’s marketing strategy.
